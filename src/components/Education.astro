@@ -1,0 +1,29 @@
+---
+import EducationItem from "./EducationItem.astro";
+
+const educationData = [
+	{
+		title: "Certificate FullStack Developer",
+		company: "Universidad Simon I. Patino",
+		date: "March 2023",
+	},
+	{
+		title: "System Engineer",
+		company: "Universidad Mayor de San Simon",
+		date: "January 2022",
+	},
+	{
+		title: "Software Developer",
+		company: "Fundacion Jala",
+		date: "March 2019",
+	},
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-2">
+	{
+		educationData.map((education, index) => (
+			<EducationItem key={index + education.title} {...education} />
+		))
+	}
+</ol>
