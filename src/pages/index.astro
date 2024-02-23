@@ -14,54 +14,68 @@ import GmailIcon from "../icons/Gmail.astro";
 import BriefCaseIcon from "../icons/BriefCase.astro";
 import EducationIcon from "../icons/Education.astro";
 import UserIcon from "../icons/User.astro";
+
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Portfolio - Marco Baltazar">
 	<main class="px-4">
-		<SectionContainer id="home" class="py-44 pb-24">
-			<img
-				class="rounded-full w-12 h-12"
-				src="https://avatars.githubusercontent.com/u/158519820?s=400&u=3600dbffa81b44fc57d7e7e29a156e21da029c69&v=4"
-				alt="marcus photo"
-			/>
+		<SectionContainer id="home" class="lg:pt-44 lg:pb-14 pt-20 pb-4">
+			<picture>
+				<Image
+					src="https://avatars.githubusercontent.com/u/158519820?s=400&u=3600dbffa81b44fc57d7e7e29a156e21da029c69&v=4"
+					alt="user portfolio"
+					width="50"
+					height="50"
+					class="rounded-full"
+					loading={"eager"}
+				/>
+			</picture>
 			<h1
-				class="text-white text-2xl md:text-3xl lg:text-4xl font-bold flex justify-center flex-row gap-x-4 pb-4"
+				class="text-white text-2xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 lg:py-2 py-1"
 			>
 				Hey, I'm Marco Baltazar
-				<a
-					href="https://www.linkedin.com/in/marco-antonio-baltazar-santos/"
-					target="_blank"
-					rel="noopener"
-					class="flex justify-center items-center"
-					><Badge>Open to work</Badge></a
-				>
 			</h1>
-			<h2 class="text-xl lg:text-2xl max-w-[700px] opacity-80 text-wrap lg:text-pretty">
-				Fullstack developer who has an extra taste for
-				<span class="text-[#3faef2] font-semibold">Frontend</span> development.
-				<span class="text-[#3faef2] font-semibold">Software Engineer</span> +4 years
-				of experience working on outsourcing projects.
+			<div class="flex gap-10">
+				<span class="text-personal-info">mabsbaltazar@gmail.com</span><span
+					class="text-personal-info">+591 60717546</span
+				>
+			</div>
+			<h2
+				class="text-xl lg:text-2xl max-w-[700px] text-white/90 text-wrap lg:text-pretty"
+			>
+				Software Engineer who loves <span class="text-[#3faef2] font-semibold">Frontend Development</span>, +4
+				years of experience working on Outsourcing projects.
 			</h2>
 			<nav class="flex justify-center gap-x-2 p-8">
-				<SocialNetwork href="https://github.com/polacodev">
+				<SocialNetwork href="https://github.com/polacodev" networkName="github">
 					<GitHubIcon class="size-6" />
 				</SocialNetwork>
-				<SocialNetwork href="https://gitlab.com/mabsbaltazar">
+				<SocialNetwork
+					href="https://gitlab.com/mabsbaltazar"
+					networkName="gitlab"
+				>
 					<GitLabIcon class="size-6" />
 				</SocialNetwork>
 				<SocialNetwork
 					href="https://www.linkedin.com/in/marco-antonio-baltazar-santos/"
+					networkName="linkedin"
 				>
 					<LinkedInIcon class="size-6" />
 				</SocialNetwork>
-				<SocialNetwork href="https://www.linkedin.com/in/marco-antonio/">
+				<SocialNetwork
+					href="https://www.linkedin.com/in/marco-antonio/"
+					networkName="gmail"
+				>
 					<GmailIcon class="size-6" />
 				</SocialNetwork>
 			</nav>
 		</SectionContainer>
 
 		<SectionContainer id="experience">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80">
+			<h2
+				class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80"
+			>
 				<BriefCaseIcon class="size-7" />
 				Experience
 			</h2>
@@ -69,7 +83,9 @@ import UserIcon from "../icons/User.astro";
 		</SectionContainer>
 
 		<SectionContainer id="education">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80">
+			<h2
+				class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80"
+			>
 				<EducationIcon class="size-7" />
 				Education
 			</h2>
@@ -77,7 +93,9 @@ import UserIcon from "../icons/User.astro";
 		</SectionContainer>
 
 		<SectionContainer id="about-me">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80">
+			<h2
+				class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80"
+			>
 				<UserIcon class="size-7" />
 				About me
 			</h2>
@@ -95,3 +113,9 @@ import UserIcon from "../icons/User.astro";
 		</SectionContainer>
 	</main>
 </Layout>
+
+<style>
+	.text-personal-info {
+		@apply text-sm font-light text-white/50 italic hover:not-italic;
+	}
+</style>
