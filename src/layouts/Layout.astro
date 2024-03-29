@@ -20,12 +20,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-  <body class="relative overflow-x-hidden">
-		<div
-			class="absolute top-0 bottom-0 z-[-2] min-h-screen w-screen bg-gray-950 
-			bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-		>
-		</div>
+	<body class="overflow-x-hidden">
 		<Header />
 		<slot />
 		<Footer />
@@ -42,13 +37,22 @@ const { title } = Astro.props;
 		scroll-behavior: smooth;
 	}
 	body {
-		background: #262626;
+		/* background: #262626;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		min-height: 1vh;
 		min-height: 100vh;
-		overscroll-behavior: none;
+		overscroll-behavior: none; */
+		position: absolute;
+		top: 0px;
+		z-index: -2;
+		height: 100vh;
+		width: 100vw;
+		background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+		--tw-bg-opacity: 1;
+		background-image: radial-gradient(#ffffff33 1px,#00091d 1px);
+		background-size: 20px 20px;
 	}
 
 	@media (prefers-reduced-motion: reduce) {

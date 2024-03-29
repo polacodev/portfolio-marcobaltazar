@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SocialNetwork from "../components/SocialNetwork.astro";
-import Badge from "../components/Badge.astro";
-import Experience from "../components/Experience.astro";
+// import Badge from "../components/Badge.astro";
+import Experience from "../components/Experience";
 import Education from "../components/Education.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Stack from "../components/Stack.astro";
@@ -44,10 +44,17 @@ import { Image } from "astro:assets";
 			<h2
 				class="text-xl lg:text-2xl max-w-[700px] text-white/90 text-wrap lg:text-pretty"
 			>
-				Software Engineer who loves <span class="text-[#3faef2] font-semibold">Frontend Development</span>, +4
-				years of experience working on Outsourcing projects.
+				Software Engineer who loves <span class="text-[#3faef2] font-semibold"
+					>Frontend Development</span
+				>, +4 years of experience working on Outsourcing projects.
 			</h2>
 			<nav class="flex justify-center gap-x-2 p-8">
+				<SocialNetwork
+					href="https://www.linkedin.com/in/marco-antonio-baltazar-santos/"
+					networkName="linkedin"
+				>
+					<LinkedInIcon class="size-6" />
+				</SocialNetwork>
 				<SocialNetwork href="https://github.com/polacodev" networkName="github">
 					<GitHubIcon class="size-6" />
 				</SocialNetwork>
@@ -57,18 +64,12 @@ import { Image } from "astro:assets";
 				>
 					<GitLabIcon class="size-6" />
 				</SocialNetwork>
-				<SocialNetwork
-					href="https://www.linkedin.com/in/marco-antonio-baltazar-santos/"
-					networkName="linkedin"
-				>
-					<LinkedInIcon class="size-6" />
-				</SocialNetwork>
-				<SocialNetwork
+				<!-- <SocialNetwork
 					href="https://www.linkedin.com/in/marco-antonio/"
 					networkName="gmail"
 				>
 					<GmailIcon class="size-6" />
-				</SocialNetwork>
+				</SocialNetwork> -->
 			</nav>
 		</SectionContainer>
 

@@ -1,0 +1,68 @@
+
+import ExperienceItem from './ExperienceItem';
+
+const experienceData = [
+  {
+    title: "Software Engineer II - Koerber Supply Chain",
+    company: "Jalasoft",
+    date: "September 2020 - January 2024",
+    description:
+      "Development and maintenance of an Inventory management web app, added new features, bug fixing using c#, typescript, xbase++. New features added to make transactions using xbase++, for picking and packing inventory. Backend has developed using c#, odata Frontend has been developed using typescript, kendo ui, knockout ",
+    project: ["azure", "dotnet", "git", "js", "sql", "css", "html", "ts"]
+  },
+  {
+    title: "Software Engineer II - Actio",
+    company: "Jalasoft",
+    date: "June 2020 - September 2020",
+    description:
+      "Development of a web application to manage events, like share knowledge, etc, worked creating social network login with microservices, created new forms using formik, bug fixing. Backend has been developed using c#, graphql. Frontend has been developed using typescript, react, redux, material ui, apollo client Added test integrations, unit tests, e2e tests. ",
+    project: ["apollo", "git", "js", "jest", "mongo", "node", "css", "html", "react", "redux", "ts"]
+  },
+  {
+    title: "Software Engineer I - Science Logic",
+    company: "Jalasoft",
+    date: "August 2019 - May 2020",
+    description:
+      "Help in the migration of a web app regards to capture data from devices like router, computers. Added features in advanced search, where was able to add pills in order to have a better data filter, added new queries, mutation on backend to get, write some records in the db. Backend has been developed using javascript nodejs, express graphql, added integration test, snapshots Frontend has been developed using react typescript, redux, unit test, e2e test.",
+    project: ["git", "graphql", "js", "jest", "linux", "mysql", "node", "css", "html", "react", "redux", "ts"]
+  },
+  {
+    title: "Software Engineer I - Highjump",
+    company: "Jalasoft",
+    date: "April 2019 - August 2019",
+    description:
+      "Help on the maintenance of the application bug fixing and small enhancements in the app. Backend has been developed using c#, odata. Frontend has been developed using typescript, kendo ui, knockout js",
+    project: ["dotnet", "git", "js", "sql", "css", "html", "ts"]
+  },
+  {
+    title: "Full Stack Mobile Developer I",
+    company: "EPJ",
+    date: "June 2020 - January 2022",
+    description:
+      "Development of a mobile application for Supply and Demand Jobs sending push notification for all interested people on reaching out to professionals, added mutations, queries, and subscription to handle hot reloading with data Added the ability to rate people based on his/her performance, once the work is completed, added the ability to delete, and add new contacts Frontend has been developed with react native, redux, native base, apollo client Backend has been developed using nodejs, graphql Has been created test integration, snapshot, units test, e2e test",
+    project: ["apollo", "git", "js", "jest", "mongo", "node", "android", "css", "html", "rn", "redux"]
+  },
+  {
+    title: "Full Stack Developer I",
+    company: "Fundacion Jala",
+    date: "April 2018 - March 2019",
+    description:
+      "Development of a web application for tracking and monitoring of Teams. Frontend, has been developed with react, javascript material ui, jest test, e2e test. Backend, has been developed with nodejs, mongoDB, javascript, unit test, snapshot",
+    project: ["git", "js", "jest", "linux", "mongo", "node", "css", "html", "react"]
+  }
+];
+
+
+const Experience = () => {
+  return (
+    <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-2">
+      {
+        experienceData.map((experience, index) => (
+          <ExperienceItem key={index + experience.title} {...experience} />
+        ))
+      }
+    </ol>
+  )
+}
+
+export default Experience
