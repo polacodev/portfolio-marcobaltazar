@@ -23,4 +23,4 @@ npm run dev
 * React
 
 
-![image](https://github.com/polacodev/portfolio-marcobaltazar/assets/158519820/deb5354c-36b1-4b21-b073-63ed39a49373)
+![image](https://github.com/polacodev/portfolio-marcobaltazar/assets/158519820/25c1aa15-92d9-4b4d-9b33-f98e7bb2e55f)
