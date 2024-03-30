@@ -1,19 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SocialNetwork from "../components/SocialNetwork.astro";
-// import Badge from "../components/Badge.astro";
 import Experience from "../components/Experience";
 import Education from "../components/Education.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Stack from "../components/Stack.astro";
+import AboutMe from "../components/AboutMe.astro";
 
 import GitHubIcon from "../icons/GitHub.astro";
 import GitLabIcon from "../icons/GitLab.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
-import GmailIcon from "../icons/Gmail.astro";
 import BriefCaseIcon from "../icons/BriefCase.astro";
 import EducationIcon from "../icons/Education.astro";
-import UserIcon from "../icons/User.astro";
 
 import { Image } from "astro:assets";
 ---
@@ -64,12 +61,6 @@ import { Image } from "astro:assets";
 				>
 					<GitLabIcon class="size-6" />
 				</SocialNetwork>
-				<!-- <SocialNetwork
-					href="https://www.linkedin.com/in/marco-antonio/"
-					networkName="gmail"
-				>
-					<GmailIcon class="size-6" />
-				</SocialNetwork> -->
 			</nav>
 		</SectionContainer>
 
@@ -94,29 +85,13 @@ import { Image } from "astro:assets";
 		</SectionContainer>
 
 		<SectionContainer id="about-me">
-			<h2
-				class="text-2xl font-semibold mb-6 flex gap-x-3 items-center opacity-80"
-			>
-				<UserIcon class="size-7" />
-				About me
-			</h2>
-			<p class="text-pretty ml-2 opacity-80">
-				I studied System Engineering at the Universidad Mayor de San Simón, I
-				have been working with javascript, typescript, react in frontend and
-				graphql, nodejs, c# in backend as well as react native for mobile
-				development, I have +4 years of experience developing commercial
-				software, attentive to the quality of work at each stage of the
-				development life cycle from design, implementation of functionality,
-				debugging, testing and maintenance. I'm interested on backend frontend
-				development and learning new technologies.
-			</p>
-			<Stack />
+			<AboutMe />
 		</SectionContainer>
 	</main>
 </Layout>
 
 <style>
 	.text-personal-info {
-		@apply text-sm font-light text-white/50 italic hover:not-italic;
+		@apply text-sm font-light text-white/50 hover:italic;
 	}
 </style>
