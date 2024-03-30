@@ -20,6 +20,7 @@ npm run dev
 * Astro
 * Tailwindcss
 * Typescript
+* React
 
 
 ![image](https://github.com/polacodev/portfolio-marcobaltazar/assets/158519820/deb5354c-36b1-4b21-b073-63ed39a49373)
