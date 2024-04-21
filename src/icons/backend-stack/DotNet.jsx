@@ -1,6 +1,6 @@
 const DotNetIcon = ({ size }) => {
 	return (
-		<div class="flex flex-col items-center">
+		<div className="flex flex-col items-center">
 			<svg
 				className={size}
 				xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ const DotNetIcon = ({ size }) => {
 			></path><path
 				d="M128.46 48.63a94.96 94.96 0 0 1 82.26 47.45l-.16-.27-41.35 23.8A47.28 47.28 0 0 0 129 96.33h-.54a47.3 47.3 0 0 0-47.3 47.3 47.08 47.08 0 0 0 6.23 23.47 47.28 47.28 0 0 0 82.29-.27l-.2.35 41.29 23.91a94.97 94.97 0 0 1-81.25 47.54h-1.06a94.96 94.96 0 0 1-95-95 95 95 0 0 1 95-95z"
 			></path></g		></svg	>
-			<p class="text-xs text-white/65">C#</p>
+			<p className="text-xs text-white/65">C#</p>
 		</div>
 	)
 }

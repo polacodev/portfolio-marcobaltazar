@@ -1,6 +1,6 @@
 const AzureDevOpsIcon = ({ size }) => {
   return (
-    <div class="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <svg
         className={size}
         viewBox="0 0 16 16"
@@ -27,7 +27,7 @@ const AzureDevOpsIcon = ({ size }) => {
           ></stop><stop offset=".82" stop-color="#559CEC"></stop><stop
             offset="1"
             stop-color="#5EA0EF"></stop></linearGradient></defs></g></svg>
-      <p class="text-xs text-white/65">Azure DevOps</p>
+      <p className="text-xs text-white/65">Azure DevOps</p>
     </div>
   )
 }

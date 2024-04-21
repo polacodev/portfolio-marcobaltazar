@@ -1,6 +1,6 @@
 const NextJSIcon = ({ size }) => {
 	return (
-		<div class="flex flex-col items-center">
+		<div className="flex flex-col items-center">
 			<svg
 				className={size}
 				viewBox="0 0 256 256"
@@ -14,18 +14,18 @@ const NextJSIcon = ({ size }) => {
 			><stop offset="0%" stop-color="#FFF"></stop><stop
 				offset="100%"
 				stop-color="#FFF"
-				stop-opacity="0"></stop></linearGradient><linearGradient id="d" x1="50%" x2="49.953%" y1="0%" y2="73.438%"
+				></stop></linearGradient><linearGradient id="d" x1="50%" x2="49.953%" y1="0%" y2="73.438%"
 				><stop offset="0%" stop-color="#FFF"></stop><stop
 					offset="100%"
 					stop-color="#FFF"
-					stop-opacity="0"></stop></linearGradient><circle id="a" cx="128" cy="128" r="128"></circle></defs><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><g
+					></stop></linearGradient><circle id="a" cx="128" cy="128" r="128"></circle></defs><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><g
 						mask="url(#b)"
 					><circle cx="128" cy="128" r="128"></circle><path
 						fill="url(#c)"
 						d="M212.634 224.028 98.335 76.8H76.8v102.357h17.228V98.68L199.11 234.446a128.433 128.433 0 0 0 13.524-10.418Z"
 					></path><path fill="url(#d)" d="M163.556 76.8h17.067v102.4h-17.067z"
 					></path></g></svg>
-			<p class="text-xs text-white/65">NextJS</p>
+			<p className="text-xs text-white/65">NextJS</p>
 		</div>
 	)
 }
