@@ -1,5 +1,3 @@
-import React from 'react'
-
 const LinuxIcon = ({ size }) => {
   return (
     <div class="flex flex-col items-center">
